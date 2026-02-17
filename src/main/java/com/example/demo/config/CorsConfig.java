@@ -17,9 +17,9 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
 
-        // 🔴 Replace with YOUR real Netlify URL
+        
         config.setAllowedOrigins(List.of(
-                "https://salessavvyproject.netlify.app/"
+                "https://salessavvyproject.netlify.app"
         ));
 
         config.setAllowedHeaders(List.of("*"));
