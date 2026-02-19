@@ -1,5 +1,5 @@
 FROM eclipse-temurin:17-jdk
 WORKDIR /app
-COPY target/salessavvy-0.0.1-SNAPSHOT.jar salessavvy-0.0.1-SNAPSHOT.jar
+COPY target/*.jar app.jar
 EXPOSE 9090
 ENTRYPOINT ["java","-jar","salessavvy-0.0.1-SNAPSHOT.jar"]
