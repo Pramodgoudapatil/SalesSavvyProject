@@ -2,7 +2,7 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: salessavvy-mysql
+    container_name: salesproject-mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: "root"
@@ -19,7 +19,7 @@ services:
 
   app:
     build: .
-    container_name: salessavvy-app
+    container_name: salesproject-app
     restart: unless-stopped
     ports:
       - "9090:9090"

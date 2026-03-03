@@ -19,6 +19,7 @@ public class CorsConfig {
 
         
         config.setAllowedOrigins(List.of(
+        		"http://localhost:5174",
                 "https://salessavvyproject.netlify.app"
         ));
 
