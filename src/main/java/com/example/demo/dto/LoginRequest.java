@@ -1,7 +1,9 @@
 package com.example.demo.dto;
 
 public class LoginRequest {
+	@JsonProperty("Username")
 	private String username;
+    @JsonProperty("Password")
     private String password;
     public LoginRequest() {
 		// TODO Auto-generated constructor stub
